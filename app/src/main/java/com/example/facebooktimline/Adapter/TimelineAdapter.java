@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,13 +17,11 @@ import java.util.ArrayList;
 import java.util.zip.Inflater;
 
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineViewHolder> {
-
     private ArrayList<TimlineListDM> timelineList ;
 
     public TimelineAdapter(ArrayList<TimlineListDM> timelineList) {
         this.timelineList = timelineList;
     }
-
 
     @NonNull
     @Override
@@ -37,6 +36,8 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
             holder.textView_profileName.setText(timlineListDM.getProfileName());
             holder.textView_time.setText(timlineListDM.getTime());
             holder.textView_content.setText(timlineListDM.getContent());
+            holder.imageView_profile.setImageResource(timlineListDM.getImageView_profile());
+            holder.imageView_content.setImageResource(timlineListDM.getImageView_Content());
     }
 
     @Override
@@ -45,14 +46,15 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
     }
 
     class TimelineViewHolder extends RecyclerView.ViewHolder {
-
+        ImageView imageView_content;
         TextView textView_profileName;
+        ImageView imageView_profile;
         TextView textView_time;
-
         TextView textView_content;
         public TimelineViewHolder(@NonNull View itemView) {
             super(itemView);
             //find view by id
+
 
         }
     }

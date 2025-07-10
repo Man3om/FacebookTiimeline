@@ -35,11 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void CreatesTimelineList() {
         ArrayList<TimlineListDM> timelineList = new ArrayList<>();
-
-        timelineList.add(new TimlineListDM("ALi Hassan", "21:00", "Hello World"));
-        timelineList.add(new TimlineListDM("Ali Sayed", "00:00", "Nice World"));
-        timelineList.add(new TimlineListDM("Ali Emad", "15:00", "Hello Friend"));
-        timelineList.add(new TimlineListDM("Ali Kamal", "20:00", "----------"));
     }
 
     private void setupRecyclerView() {
