@@ -1,3 +1,3 @@
 # FacebookTiimeline
 
-Implement FaceBook Timeline using RecylerView Beginning.
+Implement FaceBook Timeline using RecylerView.
