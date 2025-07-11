@@ -36,8 +36,6 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
             holder.textView_profileName.setText(timlineListDM.getProfileName());
             holder.textView_time.setText(timlineListDM.getTime());
             holder.textView_content.setText(timlineListDM.getContent());
-            holder.imageView_profile.setImageResource(timlineListDM.getImageView_profile());
-            holder.imageView_content.setImageResource(timlineListDM.getImageView_Content());
     }
 
     @Override
@@ -46,16 +44,15 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
     }
 
     class TimelineViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView_content;
         TextView textView_profileName;
-        ImageView imageView_profile;
         TextView textView_time;
         TextView textView_content;
         public TimelineViewHolder(@NonNull View itemView) {
             super(itemView);
             //find view by id
-
-
+            textView_profileName = itemView.findViewById(R.id.ProfileName);
+            textView_time = itemView.findViewById(R.id.PostTime);
+            textView_content = itemView.findViewById(R.id.FBPost);
         }
     }
 }

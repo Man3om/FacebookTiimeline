@@ -1,8 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="@color/white">
 
+    <View
+        android:id="@+id/ProfilePic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_person_24"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <TextView
+        android:id="@+id/ProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ProfileName"
+        app:layout_constraintStart_toEndOf="@id/ProfilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ProfilePic"
+        app:layout_constraintBottom_toBottomOf="@id/ProfilePic"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
 
+    <TextView
+        android:id="@+id/PostTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableEndCompat="@drawable/privacy"
+        tools:text="@string/PostTime"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/ProfilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ProfilePic"
+        app:layout_constraintBottom_toBottomOf="@id/ProfilePic"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:textColor="@color/gray"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/FBPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/FBPost"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintStart_toStartOf="@id/ProfilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ProfilePic"
+        app:layout_constraintBottom_toTopOf="@id/FBImagePost"/>
+
+    <TextView
+        android:id="@+id/FBPostLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FBLinkPost"
+        android:textColor="#2B3EA9"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/ProfilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FBPost"/>
+
+    <View
+        android:id="@+id/FBImagePost"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/ProfilePic"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintTop_toBottomOf="@id/FBPostLink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FBImagePost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/Line"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Like"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            app:drawableEndCompat="@drawable/like_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            app:drawableEndCompat="@drawable/comment_icon"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            app:drawableEndCompat="@drawable/share_icon"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Line"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        app:layout_constraintVertical_bias="0.01"
+        android:background="@color/EditTextLineColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.95"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

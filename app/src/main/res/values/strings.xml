@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FacebookTimline</string>
+    <string name="email">Email</string>
+    <string name="facebook_Label">facebook</string>
+    <string name="help_center">Help Center</string>
+    <string name="sign_up_for_facebook">Sign Up for Facebook</string>
+    <string name="email_or_phone_number">Email or phone number</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="ProfileName">Unblast</string>
+    <string name="FBPost">Buckle up, because change is coming o wordpress</string>
+    <string name="FBLinkPost">http://unblast.com/color-schemes</string>
+    <string name="like_comment_share_Bottom">Like\t\t\t\t\t\t\t\t\t\t\t\t\t\t\Comment\t\t\t\t\t\t\t\t\t\t\t\t\tShare</string>
+    <string name="PostTime">2 hrs</string>
 </resources>

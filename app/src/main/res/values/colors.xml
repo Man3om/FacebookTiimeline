@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="LoginBackgroundColor">#3B5998</color>
+    <color name="gray">#515151</color>
+    <color name="LoginButton">#4267B2</color>
+    <color name="EditTextLineColor">#343B5997</color>
+    <color name="ProfilePic">#FF9800</color>
 </resources>
