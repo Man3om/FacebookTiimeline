@@ -110,7 +110,9 @@
             android:layout_weight="1"
             android:textColor="@color/gray"
             android:textSize="14sp"
-            app:drawableEndCompat="@drawable/like_icon" />
+            app:drawableEndCompat="@drawable/like_icon"
+            android:paddingHorizontal="35dp"
+            />
 
         <TextView
             android:layout_width="0dp"
@@ -120,7 +122,8 @@
             android:layout_weight="1"
             android:textColor="@color/gray"
             android:textSize="14sp"
-            app:drawableEndCompat="@drawable/comment_icon"/>
+            app:drawableEndCompat="@drawable/comment_icon"
+            android:paddingHorizontal="20dp" />
 
         <TextView
             android:layout_width="0dp"
@@ -130,7 +133,8 @@
             android:layout_weight="1"
             android:textColor="@color/gray"
             android:textSize="14sp"
-            app:drawableEndCompat="@drawable/share_icon"/>
+            app:drawableEndCompat="@drawable/share_icon"
+            android:paddingHorizontal="25dp"/>
     </LinearLayout>
 
     <View
