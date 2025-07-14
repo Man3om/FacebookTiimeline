@@ -1,4 +1,4 @@
-package com.example.facebooktimline.Adapter;
+package com.example.facebooktimline.Java.Adapter;
 
 public class TimlineListDM {
     private String profileName;

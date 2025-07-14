@@ -1,11 +1,8 @@
-package com.example.facebooktimline.Adapter;
+package com.example.facebooktimline.Java.Adapter;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageSwitcher;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.facebooktimline.R;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineViewHolder> {
     private ArrayList<TimlineListDM> timelineList ;
